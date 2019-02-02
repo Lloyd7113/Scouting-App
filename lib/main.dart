@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:scouting_app/csvControl.dart';
-import 'package:csv/csv.dart';
 
 void main() => runApp(MyApp());
 
@@ -67,7 +65,6 @@ void initState(){
                   child: RaisedButton(
                       child: Text('New Match', style: TextStyle(color: Colors.white)),
                       onPressed: () {
-                        startUp();
                         Navigator.push(
                             context,
                             MaterialPageRoute(builder: (context) => CreateMatch())
@@ -242,8 +239,9 @@ class SplashState extends State<Splash>{
   }
 }
 
-class Team extends StatefulWidget{
 
+
+class Team extends StatefulWidget{
   @override
   TeamState createState() => TeamState();
 }
